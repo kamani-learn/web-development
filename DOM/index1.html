@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a>home</a>
+        <a>about</a>
+        <a>contect</a>
+        <a style="display: none;">help</a>
+    </nav>
+    <h2>programming language</h2>
+    <ul class="language-list"></ul>
+    <script>
+        const navbar = document.querySelector("nav")
+        console.log(navbar.innerText)
+        const language = document.querySelector(".language-list")
+        
+        language.textContent = `
+        <li>php</li>
+        <li>GO</li>
+        <li>python</li>
+        <li>java script</li>`
+        
+        
+        console.log()
+    </script>
+</body>
+</html>

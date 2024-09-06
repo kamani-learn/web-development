@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event </title>
+</head>
+<body>
+    <ul id="images">
+        <li>
+            <img id="kailash"src="https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW91bnRhaW5zfGVufDB8fDB8fHww" alt="mountain range" width="150" height="150">
+
+        </li>
+        <li>
+            <img id="sun"src="https://i0.wp.com/picjumbo.com/wp-content/uploads/illuminated-neon-circle-behind-the-mountain-free-photo.jpeg?w=600&quality=80" width="150" height="150">
+        </li>
+        <li>
+            <img id="rakhi"src="https://media.istockphoto.com/id/1257015025/photo/indian-festival-raksha-bandhan-with-rakhi-bracelets-presents-rice-and-kumkum-in-bowls-copy.jpg?s=612x612&w=0&k=20&c=N_c9hh_9okasBvLRkcJ4wBvdvOoaNJ0bPEwGFske_h8=" width="150" height="150">
+        </li>
+        <li>
+            <a style="color:red;"href="https://www.google.com/" id="google">google</a>
+        </li>
+    </ul>
+</body>
+<script>
+    //  event ; clock, type , timestamp,defaultprevented,target,
+    //  toElement,srcElement,currenttarget,;clintx,clintY,screenX,screenY
+    // altkey,crlkey,hiftkey,eycode
+
+
+    // what is event propagation
+    // 1. event bubling = run bottom to top(inside to outside)
+    // 2.event capturing = run top to bottom(outside to inside)
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked the ul")
+    // },false)
+
+    // document.getElementById('kailash').addEventListener('click',function(e){
+    //     console.log("clicked here kailash")
+    // },false)
+
+    //2.event capturing = run top to bottom(outside to inside)
+
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked the ul")
+    // },true)
+
+    // document.getElementById('kailash').addEventListener('click',function(e){
+    //     console.log("clicked here kailash")
+    // },true)
+
+
+    // document.getElementById("google").addEventListener('click',function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault()
+    // },false)
+
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     //console.log(e.target.parentNode)
+    //     // let removeIt = e.target.parentNode
+    //     // removeIt.remove()
+    //     console.log (e.target.tagName)
+        
+    //     if(e.target.tagName === 'IMG'){
+    //         console.log(e.target.id)
+    //         let removeIt = e.target.parentNode
+    //          removeIt.remove() 
+    //     }
+
+
+
+    // },false)
+
+
+
+// INTERWIVE QUESTION
+
+// function foo(){
+//     // console.log('hello')
+//     return 'hello'
+// }
+// const result = foo()
+// console.log(result);
+
+
+// ARMSTRONG NUMBER 
+// let num = parseInt(prompt("enter the any number ;" ))
+// let  rem;
+// sum = 0;
+// let number = num
+
+// while(num > 0){
+//     rem = num % 10
+//     sum = sum + (rem*rem*rem*rem)
+//     num = parseInt(num / 10)
+
+// }
+// console.log(sum)
+// if(sum === number){
+//     console.log("yes this is armstrong number " + sum) 
+// }else{
+//     console.log("this not armstring number " + sum)
+// }
+
+
+
+
+
+
+
+</script>
+</html>
