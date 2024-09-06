@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flag{
+            height: 600px;
+            width:600px ;
+            background-color: azure;
+            position: relative;
+        }
+        .flag > .first{
+            height: 200px;
+            
+            background-color: orangered;
+        }
+        .flag > .middle{
+            height: 200px;
+            background-color: white;
+        }
+        .flag > .middle > .circle{
+          height: 150px; 
+          width: 150px;
+          border: 10px Groove blue;
+          border-radius: 50%;
+          position: relative;
+          left: 35%;
+          bottom:-9%; ;
+         
+        }
+        .flag > .middle > .circle >.line{
+            height: 170px;
+            width: 1px;
+            display: inline-block;
+            color: blue;
+
+        }
+        .flag > .lower{
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="first"></div>
+        <div class="middle">
+            <div class="circle">
+                <img src="Ashoka_Chakra.png" alt="ashok_chakra"width="150px" height="150px">
+            </div>
+        </div>
+        <div class="lower"></div>
+    </div>
+</body>
+</html>
